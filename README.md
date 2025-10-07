@@ -821,6 +821,69 @@ ExecStart=/usr/local/bin/node_exporter
 [Install]
 WantedBy=multi-user.target
 ```
+<br>
+
+<br>
+
+ИТОГ: <br>
+
+Метрики с private машины: <br>
+<img width="774" height="480" alt="image" src="https://github.com/user-attachments/assets/07e7ad3d-d07e-4ba2-aa09-f940a69eb287" /> <br>
+
+<br>
+
+Метрики redis с master node: <br>
+<img width="1008" height="774" alt="image" src="https://github.com/user-attachments/assets/19a3968d-ca1f-4994-b96b-ceb770973c89" /> <br>
+
+<br>
+
+И две реплик node: <br>
+<img width="1002" height="764" alt="image" src="https://github.com/user-attachments/assets/ae5f403a-4df3-46f2-86ee-78031f07d138" /> <br>
+
+<img width="1009" height="766" alt="image" src="https://github.com/user-attachments/assets/10f1f47a-20d7-4a46-8198-3dd6c91dfc75" /> <br>
+
+<br>
+
+Проверка отказоустойчивости redis: <br>
+
+<img width="336" height="91" alt="image" src="https://github.com/user-attachments/assets/b89d4eac-40a0-4758-9f4d-01fa7e7063f5" /> <br>
+
+<img width="278" height="91" alt="image" src="https://github.com/user-attachments/assets/14f520b7-837d-4657-aae1-c1a5bb0a46cd" /> <br>
+
+<img width="293" height="87" alt="image" src="https://github.com/user-attachments/assets/0924b546-6f10-4e8f-9a17-c2faf4d13d88" /> <br>
+
+
+Теперь отключаю мастер: <br>
+
+<img width="461" height="53" alt="image" src="https://github.com/user-attachments/assets/ba572133-44d0-4c38-90b2-aecf4c59025f" /> <br>
+
+И соответсвенно redis2 стал мастером, а redis3 его репликой: <br>
+
+<img width="292" height="90" alt="image" src="https://github.com/user-attachments/assets/469c7dc4-00df-4ed2-a021-3b6148e8f65e" /> <br>
+
+
+<img width="313" height="91" alt="image" src="https://github.com/user-attachments/assets/92ed8b48-e1fd-4fee-ab2c-e8d464b62537" /> <br>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
 
 
 
